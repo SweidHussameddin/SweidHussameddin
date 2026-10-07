@@ -36,9 +36,30 @@ A support chatbot that answers from your own documents, cites file and page, and
 
 </td>
 </tr>
+<tr>
+<td width="55%" valign="top">
+  <a href="https://github.com/SweidHussameddin/llm-gateway"><img src="assets/llm-gateway-console.png" alt="llm-gateway console: an agent run that calls two tools on a local model, every model call and tool step listed with tokens and cost" width="100%"></a>
+</td>
+<td valign="top">
+
+### [llm-gateway](https://github.com/SweidHussameddin/llm-gateway)
+
+One OpenAI-compatible endpoint in front of several providers, with failover, cost control and tool-calling agent runs. The shape of the gateway I ran in production, reduced to what a team needs on day one.
+
+- Spring Boot 4, Java 25, virtual threads, no database or broker
+- Model aliases map to ordered routes; circuit breaker per route
+- OpenAI-compatible providers plus a native Anthropic adapter, both streaming
+- Tokens priced per route, JSONL ledger, per-key budgets (402 when spent)
+- Agents run server-side tools that are plain Spring beans
+- Checkstyle (Google style) and tests that need no network
+
+![CI](https://img.shields.io/github/actions/workflow/status/SweidHussameddin/llm-gateway/ci.yml?style=flat-square&label=ci) ![Java](https://img.shields.io/badge/Java-25-F1F3F0?style=flat-square&logo=openjdk&logoColor=0E2B38) ![Spring Boot](https://img.shields.io/badge/Spring_Boot-4-F1F3F0?style=flat-square&logo=springboot&logoColor=0E2B38)
+
+</td>
+</tr>
 </table>
 
-**Next up:** a stripped-down version of the LLM gateway and agent runtime from the platform I ran, and a Spring Boot 4 / Java 25 upgrade walkthrough on a real service.
+**Next up:** a Spring Boot 4 / Java 25 upgrade walkthrough on a real service, step by step with the tests green at every stop.
 
 <br>
 
