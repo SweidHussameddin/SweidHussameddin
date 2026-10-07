@@ -44,12 +44,12 @@ A support chatbot that answers from your own documents, cites file and page, and
 
 ## What I do for clients
 
-| | |
-|---|---|
-| **AI into existing backends** | LLM gateways, agents with tools, retrieval over your own data, evaluation sets, cost control. Java (Spring AI, LangChain4j) or Python (FastAPI). |
-| **Modernisation** | Spring Boot 2 to 3 and 4, Java 8 to 25, Auth0 or Keycloak to Entra ID, monolith to events. Tests stay green at every step. |
-| **Quality and operations** | Testcontainers, WireMock, quality gates, CI/CD, Kubernetes on Azure and bare metal. |
-| **Automation** | n8n and AI agents for support and back-office work, built with error handling and runbooks. |
+<table>
+<tr><td width="24%"><b>AI into existing backends</b></td><td>LLM gateways, agents with tools, retrieval over your own data, evaluation sets, cost control. Java (Spring AI, LangChain4j) or Python (FastAPI).</td></tr>
+<tr><td><b>Modernisation</b></td><td>Spring Boot 2 to 3 and 4, Java 8 to 25, Auth0 or Keycloak to Entra ID, monolith to events. Tests stay green at every step.</td></tr>
+<tr><td><b>Quality and operations</b></td><td>Testcontainers, WireMock, quality gates, CI/CD, Kubernetes on Azure and bare metal.</td></tr>
+<tr><td><b>Automation</b></td><td>n8n and AI agents for support and back-office work, built with error handling and runbooks.</td></tr>
+</table>
 
 <br>
 
