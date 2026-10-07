@@ -1,0 +1,33 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+  :root{--canvas:#0E2B38;--canvas-2:#123645;--grid:rgba(255,255,255,.055);--paper:#F1F3F0;--muted:#9DB0B6;--marker:#FFD23F;--mint:#7FE3D2;--mono:"JetBrainsMono NF","DejaVu Sans Mono",monospace}
+  html,body{margin:0;width:1600px;height:420px;overflow:hidden;font-family:Lato,"Liberation Sans",sans-serif;color:#fff}
+  .stage{position:relative;width:1600px;height:420px;background:
+    linear-gradient(var(--grid) 1px,transparent 1px) 0 0/40px 40px,
+    linear-gradient(90deg,var(--grid) 1px,transparent 1px) 0 0/40px 40px,
+    radial-gradient(1200px 600px at 15% 0%,var(--canvas-2),var(--canvas) 70%)}
+  .safe{position:absolute;left:80px;top:72px;right:80px;bottom:64px}
+  h1{margin:0;font-size:64px;font-weight:900;letter-spacing:-1.6px;line-height:1}
+  h1 mark{background:transparent;color:var(--marker)}
+  p{margin:18px 0 0;font-size:24px;color:var(--muted);max-width:900px;line-height:1.35;font-weight:500}
+  .code{position:absolute;right:0;top:-20px;width:430px;background:#0A1E28;border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:18px 24px;font-family:var(--mono);font-size:14.5px;line-height:1.6;color:#C9D6DB;box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+  .code .k{color:#8FB4D8}.code .s{color:#F2D37B}.code .c{color:#5E737B}.code b{color:var(--mint);font-weight:700}
+  .sticker{position:absolute;right:250px;top:236px;background:var(--marker);color:#10222C;font-weight:900;font-size:17px;line-height:1.15;padding:12px 16px;border-radius:6px;transform:rotate(-3deg);box-shadow:0 14px 30px -14px rgba(0,0,0,.8)}
+  .sticker small{display:block;font-weight:700;font-size:12.5px;margin-top:4px;color:#5E4A00}
+  .foot{position:absolute;left:0;bottom:0;font-size:17px;color:var(--muted)}
+  .foot b{color:var(--mint);font-weight:700}
+</style></head><body><div class="stage"><div class="safe">
+  <h1>Hussameddin Sweid</h1>
+  <p>Senior Java / Spring Boot engineer. AI features into <mark style="background:transparent;color:#fff">existing</mark> backends, and Spring Boot landscapes nobody wants to touch any more.</p>
+  <div class="code">
+    <div><span class="c">// what I ship</span></div>
+    <div><span class="k">@RestController</span> <b>AssistantApi</b> {</div>
+    <div>&nbsp;&nbsp;<span class="k">@PostMapping</span>(<span class="s">"/answer"</span>)</div>
+    <div>&nbsp;&nbsp;Answer answer(Question q) {</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">var</span> ctx = retriever.<b>topK</b>(q, 6);</div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="k">return</span> llm.<b>grounded</b>(q, ctx);</div>
+    <div>&nbsp;&nbsp;}</div>
+    <div>}</div>
+  </div>
+  <div class="sticker">Cites its sources<small>no made-up answers, no guessing</small></div>
+  <div class="foot">Java 25 · Spring Boot 4 · Python · Kubernetes · Kafka · RabbitMQ · <b>LLM gateways, agents, RAG</b></div>
+</div></div></body></html>

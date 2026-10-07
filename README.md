@@ -1,26 +1,71 @@
-# Hussameddin Sweid
+<p align="center">
+  <img src="assets/banner.png" alt="Hussameddin Sweid, senior Java / Spring Boot engineer" width="100%">
+</p>
 
-Senior Java / Spring Boot engineer. I bring AI features into existing backend systems and modernise Spring Boot landscapes that nobody wants to touch anymore.
+<p align="center">
+  <a href="https://www.linkedin.com/in/hussameddin-sweid"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-hussameddin--sweid-0E2B38?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://www.upwork.com/freelancers/~01ac1112d05d8dcdde"><img alt="Upwork" src="https://img.shields.io/badge/Upwork-fixed--price%20projects-1C8C86?style=flat-square&logo=upwork&logoColor=white"></a>
+  <img alt="Location" src="https://img.shields.io/badge/Germany-remote%2C%20EU%20contracts-F1F3F0?style=flat-square">
+</p>
 
-Seven years of Java and Spring Boot, microservices on Kubernetes, event-driven systems on RabbitMQ and Kafka, OAuth2 and OIDC. Today I am a senior engineer on an industrial IoT telemetry platform. Before that I founded and led an AI agent platform: a multi-provider LLM gateway, agents with tool calling, MCP, a team of up to ten developers, two years in production.
+Seven years of Java and Spring Boot, microservices on Kubernetes, event-driven systems on RabbitMQ and Kafka, OAuth2 and OIDC. Today a senior engineer on an industrial IoT telemetry platform with 50+ developers. Before that I founded and led an AI agent platform: a multi-provider LLM gateway, agents with tool calling, MCP, a team of up to ten, two years in production.
+
+<br>
 
 ## Building in public
 
+<table>
+<tr>
+<td width="55%" valign="top">
+  <a href="https://github.com/SweidHussameddin/support-bot"><img src="assets/support-bot-demo.gif" alt="support-bot demo: a question is answered from a PDF with the page cited, a booking request is handed over to a person" width="100%"></a>
+</td>
+<td valign="top">
+
+### [support-bot](https://github.com/SweidHussameddin/support-bot)
+
+A support chatbot that answers from your own documents, cites file and page, and hands the conversation to a person instead of guessing.
+
+- FastAPI, one process, no vector database to operate
+- Local hybrid retrieval: embeddings on CPU plus BM25, fused
+- Any OpenAI-compatible model, free OpenRouter models for the demo
+- Strict JSON answer contract; sources the model never saw are dropped
+- Drop-in widget, one script tag, no framework
+- Tests run without a key or network
+
+![CI](https://img.shields.io/github/actions/workflow/status/SweidHussameddin/support-bot/ci.yml?style=flat-square&label=ci) ![Python](https://img.shields.io/badge/Python-3.12-F1F3F0?style=flat-square&logo=python&logoColor=0E2B38)
+
+</td>
+</tr>
+</table>
+
+**Next up:** a stripped-down version of the LLM gateway and agent runtime from the platform I ran, and a Spring Boot 4 / Java 25 upgrade walkthrough on a real service.
+
+<br>
+
+## What I do for clients
+
 | | |
 |---|---|
-| [support-bot](https://github.com/SweidHussameddin/support-bot) | A support chatbot that answers from your own documents, cites file and page, and hands over to a person instead of guessing. FastAPI, local hybrid retrieval, any OpenAI-compatible model, drop-in widget. |
+| **AI into existing backends** | LLM gateways, agents with tools, retrieval over your own data, evaluation sets, cost control. Java (Spring AI, LangChain4j) or Python (FastAPI). |
+| **Modernisation** | Spring Boot 2 to 3 and 4, Java 8 to 25, Auth0 or Keycloak to Entra ID, monolith to events. Tests stay green at every step. |
+| **Quality and operations** | Testcontainers, WireMock, quality gates, CI/CD, Kubernetes on Azure and bare metal. |
+| **Automation** | n8n and AI agents for support and back-office work, built with error handling and runbooks. |
 
-Next up: a stripped-down version of the LLM gateway and agent runtime from the platform I ran, and a Spring Boot 4 / Java 25 upgrade walkthrough on a real service.
+<br>
 
-## What I work on for clients
+## Stack
 
-- LLM integration into Spring Boot and Python backends: gateways, agents, retrieval over your own data, evaluation, cost control
-- Migrations: Spring Boot 2 to 3 and 4, Java 8 to 25, Auth0 or Keycloak to Entra ID, monolith to events
-- Quality and operations: Testcontainers, WireMock, quality gates, CI/CD, Kubernetes
-- Automation with n8n and AI agents for support and back-office work
+<p>
+  <img alt="Java" src="https://img.shields.io/badge/Java_25-0E2B38?style=flat-square&logo=openjdk&logoColor=white">
+  <img alt="Spring Boot" src="https://img.shields.io/badge/Spring_Boot_4-0E2B38?style=flat-square&logo=springboot&logoColor=7FE3D2">
+  <img alt="Python" src="https://img.shields.io/badge/Python-0E2B38?style=flat-square&logo=python&logoColor=white">
+  <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-0E2B38?style=flat-square&logo=fastapi&logoColor=7FE3D2">
+  <img alt="Kubernetes" src="https://img.shields.io/badge/Kubernetes-0E2B38?style=flat-square&logo=kubernetes&logoColor=white">
+  <img alt="Kafka" src="https://img.shields.io/badge/Kafka-0E2B38?style=flat-square&logo=apachekafka&logoColor=white">
+  <img alt="RabbitMQ" src="https://img.shields.io/badge/RabbitMQ-0E2B38?style=flat-square&logo=rabbitmq&logoColor=white">
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0E2B38?style=flat-square&logo=postgresql&logoColor=white">
+  <img alt="Azure" src="https://img.shields.io/badge/Azure-0E2B38?style=flat-square&logo=icloud&logoColor=white">
+  <img alt="n8n" src="https://img.shields.io/badge/n8n-0E2B38?style=flat-square&logo=n8n&logoColor=white">
+</p>
 
-Most of my work lives in private repositories, by contract. The repos above are the part I can show.
-
-## Contact
-
-[LinkedIn](https://www.linkedin.com/in/hussameddin-sweid) · [Upwork](https://www.upwork.com/freelancers/~01ac1112d05d8dcdde)
+<sub>Most of my work lives in private repositories, by contract. The repos above are the part I can show.</sub>
