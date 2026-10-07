@@ -38,7 +38,7 @@ A support chatbot that answers from your own documents, cites file and page, and
 </tr>
 <tr>
 <td width="55%" valign="top">
-  <a href="https://github.com/SweidHussameddin/llm-gateway"><img src="assets/llm-gateway-console.png" alt="llm-gateway console: an agent run that calls two tools on a local model, every model call and tool step listed with tokens and cost" width="100%"></a>
+  <a href="https://github.com/SweidHussameddin/llm-gateway"><img src="assets/llm-gateway-demo.gif" alt="llm-gateway demo: a streamed answer from a local model, an agent run calling two tools, then the local route goes down and the request fails over to a hosted model while the circuit breaker opens" width="100%"></a>
 </td>
 <td valign="top">
 
