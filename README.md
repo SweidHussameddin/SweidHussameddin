@@ -57,6 +57,26 @@ One OpenAI-compatible endpoint in front of several providers, with failover, cos
 
 </td>
 </tr>
+<tr>
+<td width="55%" valign="top">
+  <a href="https://github.com/SweidHussameddin/llama-control"><img src="assets/llama-control-telemetry.png" alt="llama-control telemetry: prompt-eval and generation tokens per second, cache hits, GPU load, VRAM, temperature and power, with the live llama-server log below" width="100%"></a>
+</td>
+<td valign="top">
+
+### [llama-control](https://github.com/SweidHussameddin/llama-control)
+
+A control panel and live ops dashboard for llama-server, the llama.cpp inference server. For running models on your own hardware with the knobs that matter for agent workloads visible, not hidden.
+
+- Launcher: every llama-server flag as a form, saved profiles, command preview
+- Telemetry at 1 Hz: tokens per second in and out, prefix-cache hits, KV state, GPU, VRAM, power
+- Log tail and per-slot KV cache view, streamed over SSE
+- OpenAI-compatible proxy in front of the managed server
+- Spring Boot 3 / Java 21 backend, React + TypeScript frontend
+
+![CI](https://img.shields.io/github/actions/workflow/status/SweidHussameddin/llama-control/ci.yml?style=flat-square&label=ci) ![Java](https://img.shields.io/badge/Java-21-F1F3F0?style=flat-square&logo=openjdk&logoColor=0E2B38) ![React](https://img.shields.io/badge/React-TypeScript-F1F3F0?style=flat-square&logo=react&logoColor=0E2B38)
+
+</td>
+</tr>
 </table>
 
 **Next up:** a Spring Boot 4 / Java 25 upgrade walkthrough on a real service, step by step with the tests green at every stop.
